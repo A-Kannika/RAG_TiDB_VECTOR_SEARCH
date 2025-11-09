@@ -1,4 +1,4 @@
-# TiDB Vector Search RAG System
+# Retrieval Augmented Generation (RAG) with TiDB Vector Search
 
 A Retrieval-Augmented Generation (RAG) system using TiDB's vector search capabilities for cybersecurity knowledge management.
 
