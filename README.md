@@ -54,9 +54,9 @@ ollama serve
 Create the required table in TiDB:
 ```sql
 CREATE TABLE documents (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     document TEXT,
-    embedding JSON
+    embedding VECTOR(1024)
 );
 ```
 
@@ -112,9 +112,13 @@ The system will:
 
 ## Example Output
 
-**Query**: "What is the meaning of Security Awareness?"
+**Query1**: "What is the meaning of Security Awareness?"
 
 **Response**: "According to the context provided, Security Awareness refers to educating employees about common cyber threats, organizational security policies, and best practices for protecting sensitive information, significantly reducing the risk of human error in security breaches."
+
+**Query2**: "What is the meaning of Pentest?"
+
+**Response**: "The term "Pentest" is an abbreviation for Penetration Testing, which I mentioned earlier in our context. In this case, "Pentest" refers to a simulated cyber attack against a computer system conducted by security engineers to identify vulnerabilities and weaknesses, thereby strengthening the overall security posture of the organization."
 
 ## License
 
